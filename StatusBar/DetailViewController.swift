@@ -8,9 +8,13 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
+class DetailViewController: UIViewController {
+    
+    var wasPresentedWithCustomAnimation: Bool = false
+    var parentNavigationController: UINavigationController!
     
     @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var goHomeButton: UIButton!
     
 //    override var childViewControllerForStatusBarStyle: UIViewController? {
 //        return self.presentingViewController?.presentedViewController
@@ -33,24 +37,32 @@ class ViewController2: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.barStyle = .black
+        goHomeButton.isHidden = true
         
         if isModal {
-            navigationItem.title = "Present"
-            navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+            if wasPresentedWithCustomAnimation {
+                goHomeButton.isHidden = false
+                navigationItem.title = "PresentWithCustomAnimation"
+                 textLabel.text = "Hello Present (Modal) with Custom Animation"
+            } else {
+                navigationItem.title = "Present"
+                 textLabel.text = "Hello Present (Modal)"
+            }
+            
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
             
             navigationController?.navigationBar.tintColor = .white
             navigationController?.navigationBar.barTintColor = .blue
             
-            textLabel.text! = "Hello Present (Modal)"
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "X".uppercased(), style: .done, target: self, action: #selector(ViewController2.popViewController(_:)))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "X".uppercased(), style: .done, target: self, action: #selector(DetailViewController.popViewController(_:)))
         } else {
             navigationItem.title = "Push"
-            navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
             
             navigationController?.navigationBar.tintColor = .white
             navigationController?.navigationBar.barTintColor = .red
             
-            textLabel.text! = "Hello Push (Non-Modal)"
+            textLabel.text = "Hello Push (Non-Modal)"
         }
     }
     
@@ -62,5 +74,9 @@ class ViewController2: UIViewController {
     
     @objc func popViewController(_ sender: UIBarButtonItem) {
         navigationController!.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func goHomeButtonPressed(_ sender: UIButton) {
+        parentNavigationController?.dismiss(animated: true, completion: nil)
     }
 }

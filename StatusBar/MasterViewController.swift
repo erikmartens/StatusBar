@@ -62,10 +62,9 @@ class MasterViewController: UIViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController2") as! DetailViewController
         viewController.wasPresentedWithCustomAnimation = true
         viewController.parentNavigationController = navigationController
+        viewController.view.layer.add(transition, forKey: nil)
         
-        let navController = UINavigationController(rootViewController: viewController)
-        
-        navigationController?.present(navController, animated: true)
+        navigationController?.present(viewController, animated: true)
     }
 }
 

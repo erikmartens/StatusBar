@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F250CB9B1F06462900EEE615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CB9A1F06462900EEE615 /* AppDelegate.swift */; };
-		F250CB9D1F06462900EEE615 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CB9C1F06462900EEE615 /* ViewController.swift */; };
+		F250CB9D1F06462900EEE615 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CB9C1F06462900EEE615 /* MasterViewController.swift */; };
 		F250CBA01F06462900EEE615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F250CB9E1F06462900EEE615 /* Main.storyboard */; };
 		F250CBA21F06462900EEE615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F250CBA11F06462900EEE615 /* Assets.xcassets */; };
 		F250CBA51F06462900EEE615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F250CBA31F06462900EEE615 /* LaunchScreen.storyboard */; };
 		F250CBB01F06462900EEE615 /* StatusBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CBAF1F06462900EEE615 /* StatusBarTests.swift */; };
 		F250CBBB1F06462900EEE615 /* StatusBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CBBA1F06462900EEE615 /* StatusBarUITests.swift */; };
-		F250CBC91F0646E300EEE615 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CBC81F0646E300EEE615 /* ViewController2.swift */; };
+		F250CBC91F0646E300EEE615 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CBC81F0646E300EEE615 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		F250CB971F06462900EEE615 /* StatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F250CB9A1F06462900EEE615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F250CB9C1F06462900EEE615 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F250CB9C1F06462900EEE615 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		F250CB9F1F06462900EEE615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F250CBA11F06462900EEE615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F250CBA41F06462900EEE615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		F250CBB61F06462900EEE615 /* StatusBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F250CBBA1F06462900EEE615 /* StatusBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarUITests.swift; sourceTree = "<group>"; };
 		F250CBBC1F06462900EEE615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F250CBC81F0646E300EEE615 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		F250CBC81F0646E300EEE615 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				F250CB9A1F06462900EEE615 /* AppDelegate.swift */,
-				F250CB9C1F06462900EEE615 /* ViewController.swift */,
-				F250CBC81F0646E300EEE615 /* ViewController2.swift */,
+				F250CB9C1F06462900EEE615 /* MasterViewController.swift */,
+				F250CBC81F0646E300EEE615 /* DetailViewController.swift */,
 				F250CB9E1F06462900EEE615 /* Main.storyboard */,
 				F250CBA11F06462900EEE615 /* Assets.xcassets */,
 				F250CBA31F06462900EEE615 /* LaunchScreen.storyboard */,
@@ -191,23 +191,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = " Erik Maximilian Martens";
 				TargetAttributes = {
 					F250CB961F06462900EEE615 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = K9UPH3NRK2;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					F250CBAA1F06462900EEE615 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = K9UPH3NRK2;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F250CB961F06462900EEE615;
 					};
 					F250CBB51F06462900EEE615 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = K9UPH3NRK2;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F250CB961F06462900EEE615;
 					};
@@ -265,9 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F250CB9D1F06462900EEE615 /* ViewController.swift in Sources */,
+				F250CB9D1F06462900EEE615 /* MasterViewController.swift in Sources */,
 				F250CB9B1F06462900EEE615 /* AppDelegate.swift in Sources */,
-				F250CBC91F0646E300EEE615 /* ViewController2.swift in Sources */,
+				F250CBC91F0646E300EEE615 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +335,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -340,7 +345,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,7 +392,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -391,7 +402,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -427,7 +442,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmartens.StatusBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -441,7 +457,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmartens.StatusBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -455,7 +472,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmartens.StatusBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatusBar.app/StatusBar";
 			};
 			name = Debug;
@@ -470,7 +488,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmartens.StatusBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StatusBar.app/StatusBar";
 			};
 			name = Release;
@@ -484,7 +503,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmartens.StatusBarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = StatusBar;
 			};
 			name = Debug;
@@ -498,7 +518,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.erikmartens.StatusBarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = StatusBar;
 			};
 			name = Release;
@@ -522,6 +543,7 @@
 				F250CBC11F06462900EEE615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F250CBC21F06462900EEE615 /* Build configuration list for PBXNativeTarget "StatusBarTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +552,7 @@
 				F250CBC41F06462900EEE615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F250CBC51F06462900EEE615 /* Build configuration list for PBXNativeTarget "StatusBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +561,7 @@
 				F250CBC71F06462900EEE615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
