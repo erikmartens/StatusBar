@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BC3FA2A2D76C9B5EBCD4A15 /* Pods_StatusBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334FE9814A28D57258ECBF05 /* Pods_StatusBar.framework */; };
 		F250CB9B1F06462900EEE615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CB9A1F06462900EEE615 /* AppDelegate.swift */; };
 		F250CB9D1F06462900EEE615 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CB9C1F06462900EEE615 /* MasterViewController.swift */; };
 		F250CBA01F06462900EEE615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F250CB9E1F06462900EEE615 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		F250CBB01F06462900EEE615 /* StatusBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CBAF1F06462900EEE615 /* StatusBarTests.swift */; };
 		F250CBBB1F06462900EEE615 /* StatusBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CBBA1F06462900EEE615 /* StatusBarUITests.swift */; };
 		F250CBC91F0646E300EEE615 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250CBC81F0646E300EEE615 /* DetailViewController.swift */; };
+		FEB5C6D9BF8C3703BBAFB29F /* Pods_StatusBarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26783672C2142A1047D48A59 /* Pods_StatusBarTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26783672C2142A1047D48A59 /* Pods_StatusBarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StatusBarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		334FE9814A28D57258ECBF05 /* Pods_StatusBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StatusBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF5F9C46EB223A61CF391CE /* Pods-StatusBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBarTests/Pods-StatusBarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CA68BC1BB5D66511372C98D /* Pods-StatusBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBar/Pods-StatusBar.debug.xcconfig"; sourceTree = "<group>"; };
+		A6A5EE0E43569853BFF718C4 /* Pods-StatusBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBar/Pods-StatusBar.release.xcconfig"; sourceTree = "<group>"; };
+		A8365A0EFEAE0BEEB110C594 /* Pods-StatusBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBarTests/Pods-StatusBarTests.release.xcconfig"; sourceTree = "<group>"; };
 		F250CB971F06462900EEE615 /* StatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F250CB9A1F06462900EEE615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F250CB9C1F06462900EEE615 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC3FA2A2D76C9B5EBCD4A15 /* Pods_StatusBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB5C6D9BF8C3703BBAFB29F /* Pods_StatusBarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		148F92A556CE8176982A85CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CA68BC1BB5D66511372C98D /* Pods-StatusBar.debug.xcconfig */,
+				A6A5EE0E43569853BFF718C4 /* Pods-StatusBar.release.xcconfig */,
+				4BF5F9C46EB223A61CF391CE /* Pods-StatusBarTests.debug.xcconfig */,
+				A8365A0EFEAE0BEEB110C594 /* Pods-StatusBarTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69A89357B6B54086BA920E83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				334FE9814A28D57258ECBF05 /* Pods_StatusBar.framework */,
+				26783672C2142A1047D48A59 /* Pods_StatusBarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F250CB8E1F06462900EEE615 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				F250CBAE1F06462900EEE615 /* StatusBarTests */,
 				F250CBB91F06462900EEE615 /* StatusBarUITests */,
 				F250CB981F06462900EEE615 /* Products */,
+				148F92A556CE8176982A85CE /* Pods */,
+				69A89357B6B54086BA920E83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F250CBBF1F06462900EEE615 /* Build configuration list for PBXNativeTarget "StatusBar" */;
 			buildPhases = (
+				0C84879B6560CD5780AE1CC3 /* [CP] Check Pods Manifest.lock */,
 				F250CB931F06462900EEE615 /* Sources */,
 				F250CB941F06462900EEE615 /* Frameworks */,
 				F250CB951F06462900EEE615 /* Resources */,
+				BD5C9929BF876B97532B7D13 /* [CP] Embed Pods Frameworks */,
+				FF1A77996B75C9674051B986 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F250CBC21F06462900EEE615 /* Build configuration list for PBXNativeTarget "StatusBarTests" */;
 			buildPhases = (
+				A7D0FF5499BE8AE8A4C12F4F /* [CP] Check Pods Manifest.lock */,
 				F250CBA71F06462900EEE615 /* Sources */,
 				F250CBA81F06462900EEE615 /* Frameworks */,
 				F250CBA91F06462900EEE615 /* Resources */,
+				C9E3632784F6ACA65BCD50AD /* [CP] Embed Pods Frameworks */,
+				A5602795780B2AF44ED7E881 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +300,111 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C84879B6560CD5780AE1CC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StatusBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5602795780B2AF44ED7E881 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StatusBarTests/Pods-StatusBarTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7D0FF5499BE8AE8A4C12F4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StatusBarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD5C9929BF876B97532B7D13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StatusBar/Pods-StatusBar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StatusBar/Pods-StatusBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9E3632784F6ACA65BCD50AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StatusBarTests/Pods-StatusBarTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StatusBarTests/Pods-StatusBarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF1A77996B75C9674051B986 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StatusBar/Pods-StatusBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F250CB931F06462900EEE615 /* Sources */ = {
@@ -434,7 +577,9 @@
 		};
 		F250CBC01F06462900EEE615 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA68BC1BB5D66511372C98D /* Pods-StatusBar.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K9UPH3NRK2;
 				INFOPLIST_FILE = StatusBar/Info.plist;
@@ -449,7 +594,9 @@
 		};
 		F250CBC11F06462900EEE615 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6A5EE0E43569853BFF718C4 /* Pods-StatusBar.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K9UPH3NRK2;
 				INFOPLIST_FILE = StatusBar/Info.plist;
@@ -464,8 +611,9 @@
 		};
 		F250CBC31F06462900EEE615 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF5F9C46EB223A61CF391CE /* Pods-StatusBarTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = K9UPH3NRK2;
 				INFOPLIST_FILE = StatusBarTests/Info.plist;
@@ -480,8 +628,9 @@
 		};
 		F250CBC41F06462900EEE615 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8365A0EFEAE0BEEB110C594 /* Pods-StatusBarTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = K9UPH3NRK2;
 				INFOPLIST_FILE = StatusBarTests/Info.plist;
@@ -497,7 +646,7 @@
 		F250CBC61F06462900EEE615 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = K9UPH3NRK2;
 				INFOPLIST_FILE = StatusBarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -512,7 +661,7 @@
 		F250CBC71F06462900EEE615 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = K9UPH3NRK2;
 				INFOPLIST_FILE = StatusBarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
